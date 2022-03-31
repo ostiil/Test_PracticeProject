@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A2C1E95D-A896-4121-9701-08B60CCD5924}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Testing_ProjectPractice_KAS</RootNamespace>
+    <AssemblyName>Testing_ProjectPractice_KAS</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EasyLevel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EasyLevel.Designer.cs">
+      <DependentUpon>EasyLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EasyLevelAudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EasyLevelAudio.Designer.cs">
+      <DependentUpon>EasyLevelAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EasyLevelGrammar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EasyLevelGrammar.Designer.cs">
+      <DependentUpon>EasyLevelGrammar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Finish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Finish.Designer.cs">
+      <DependentUpon>Finish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinishHard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinishHard.Designer.cs">
+      <DependentUpon>FinishHard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinishMiddle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinishMiddle.Designer.cs">
+      <DependentUpon>FinishMiddle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HardLevelAudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HardLevelAudio.Designer.cs">
+      <DependentUpon>HardLevelAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HardLevelGrammar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HardLevelGrammar.Designer.cs">
+      <DependentUpon>HardLevelGrammar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HardLevelTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HardLevelTest.Designer.cs">
+      <DependentUpon>HardLevelTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiddleLevelAudio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiddleLevelAudio.Designer.cs">
+      <DependentUpon>MiddleLevelAudio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiddleLevelGrammar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiddleLevelGrammar.Designer.cs">
+      <DependentUpon>MiddleLevelGrammar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MiddleLevelTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MiddleLevelTest.Designer.cs">
+      <DependentUpon>MiddleLevelTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EasyLevel.resx">
+      <DependentUpon>EasyLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EasyLevelAudio.resx">
+      <DependentUpon>EasyLevelAudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EasyLevelGrammar.resx">
+      <DependentUpon>EasyLevelGrammar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Finish.resx">
+      <DependentUpon>Finish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinishHard.resx">
+      <DependentUpon>FinishHard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinishMiddle.resx">
+      <DependentUpon>FinishMiddle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HardLevelAudio.resx">
+      <DependentUpon>HardLevelAudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HardLevelGrammar.resx">
+      <DependentUpon>HardLevelGrammar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HardLevelTest.resx">
+      <DependentUpon>HardLevelTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiddleLevelAudio.resx">
+      <DependentUpon>MiddleLevelAudio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiddleLevelGrammar.resx">
+      <DependentUpon>MiddleLevelGrammar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MiddleLevelTest.resx">
+      <DependentUpon>MiddleLevelTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dog.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\horse.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
